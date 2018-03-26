@@ -526,7 +526,107 @@ template {
   display: none; }
 
 body {
+  font-family: "Quattrocento Sans", sans-serif;
   font-size: 16px; }
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Quattrocento", serif;
+  color: #d24937;
+  text-shadow: 3px 3px 0px #45423d, 2px 2px 0px #45423d, 1px 1px 0px #45423d; }
+
+.title {
+  width: 100%; }
+
+.title::before {
+  content: 'est. 1693';
+  color: #45423d;
+  text-shadow: none;
+  font-size: 12px;
+  margin-right: 12px; }
+
+.title::after {
+  content: 'Salem, MA';
+  color: #45423d;
+  text-shadow: none;
+  font-size: 12px;
+  margin-left: 14px; }
+
+h2 {
+  text-align: center;
+  color: #d15d4a;
+  text-shadow: 1px 1px 0px #45423d; }
+
+#products h2 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 0%;
+          transform-origin: 0%;
+  text-align: left;
+  position: absolute;
+  left: -10px; }
+
+.potionInfo h2 {
+  top: 72px; }
+
+.charmInfo h2 {
+  top: 75px; }
+
+.curseInfo h2 {
+  top: 66px; }
+
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  background: #c2baaa;
+  border-width: 8px;
+  border-style: double;
+  border-color: #d24937;
+  margin: 10px;
+  position: relative; }
+
+header {
+  padding: 40px; }
+  header nav ul {
+    margin-right: 100px;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    header nav ul a {
+      text-decoration: none;
+      margin-right: 20px;
+      color: #45423d;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      header nav ul a:hover {
+        color: #d24937; }
+
+.cart {
+  background: #d24937;
+  padding: 5px 25px;
+  position: absolute;
+  width: 250px;
+  top: 0px;
+  right: -50px;
+  -webkit-transform: rotate(-90deg) skew(40deg);
+          transform: rotate(-90deg) skew(40deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .cart p {
+    color: #45423d;
+    -webkit-transform: skew(-40deg);
+            transform: skew(-40deg); }
+  .cart:hover {
+    cursor: pointer;
+    top: 40px; }
 
 .wrapper {
   max-width: 980px;
@@ -540,32 +640,19 @@ body {
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
-img {
-  max-width: 200px; }
+.potionInfo,
+.charmInfo,
+.curseInfo {
+  padding: 10px;
+  margin: 20px;
+  position: relative; }
 
 .container {
   width: 200px;
   height: 200px;
-  background-color: darkorchid; }
-
-.hamburger:hover {
-  cursor: pointer; }
-
-.hamburger .line {
-  width: 50px;
-  height: 5px;
-  background-color: black;
-  display: block;
-  margin: 8px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-
-.hamburger.is-active .line:nth-child(1) {
-  -webkit-transform: translateY(13px);
-  transform: translateY(13px); }
-
-.hamburger.is-active .line:nth-child(3) {
-  -webkit-transform: translateY(-13px);
-  transform: translateY(-13px); }
+  background-color: #d15d4a; }
