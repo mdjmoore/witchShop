@@ -2,11 +2,49 @@
 @import 'components/base';
 @import 'components/typography';
 
-.container {
-	max-width: 900px;
+.wrapper {
+	max-width: 980px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-* {
-	outline: 1px solid red;
+img {
+	max-width: 200px;
+}
+
+.container {
+	width:200px;
+	height:200px;
+	background-color: darkorchid;
+}
+
+.hamburger:hover {
+	cursor: pointer;
+}
+
+.hamburger .line{
+  width: 50px;
+  height: 5px;
+  background-color: black;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.is-active .line:nth-child(1){
+  -webkit-transform: translateY(13px);
+  -ms-transform: translateY(13px);
+  -o-transform: translateY(13px);
+  transform: translateY(13px);
+}
+
+.hamburger.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px);
+  -ms-transform: translateY(-13px);
+  -o-transform: translateY(-13px);
+  transform: translateY(-13px);
 }
