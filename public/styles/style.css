@@ -609,6 +609,9 @@ header {
       header nav ul a:hover {
         color: #d24937; }
 
+img {
+  max-width: 100%; }
+
 .cart {
   background: #d24937;
   padding: 5px 25px;
@@ -655,4 +658,18 @@ header {
 .container {
   width: 200px;
   height: 200px;
-  background-color: #d15d4a; }
+  background-color: #d15d4a;
+  -webkit-box-shadow: 5px 5px #45423d, 4px 4px #45423d, 3px 3px #45423d, 2px 2px #45423d, 1px 1px #45423d;
+          box-shadow: 5px 5px #45423d, 4px 4px #45423d, 3px 3px #45423d, 2px 2px #45423d, 1px 1px #45423d; }
+
+footer {
+  max-width: 80%;
+  background: #d15d4a;
+  border-width: 8px;
+  border-style: double;
+  border-color: #45423d;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: -90px;
+  left: 10%;
+  right: 10%; }
