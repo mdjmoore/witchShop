@@ -1,0 +1,19 @@
+@media (max-width:1100px) {
+    #potions .wrapper,
+    #charms .wrapper,
+    #curses .wrapper {
+       flex-wrap: wrap;
+    }
+
+    .words h2 {
+        margin-left:50%;
+    }
+
+    #about .wrapper .coven-container {
+        flex-direction: column;
+        width:100%;
+        p {
+            width:100%;
+        }
+    }
+}
