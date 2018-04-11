@@ -92,16 +92,13 @@ witchShop.events = function () {
     function handleUpdate() {
         itemID = this.id;
         itemPrice = witchShop.products[itemID].price;
-        // console.log(itemID);
         addToCart(itemID, itemPrice);
     }
     function addToCart() {
-        // console.log(itemID);
         var listItem = document.createElement("LI");
         var listText = document.createTextNode(witchShop.products[itemID].description);
         listItem.appendChild(listText);
         cartItems.appendChild(listItem);
-        // console.log(witchShop.products[itemID].price);
         var listItemPrice = document.createElement("LI");
         var listPriceText = document.createTextNode(itemPrice);
         listItemPrice.appendChild(listPriceText);

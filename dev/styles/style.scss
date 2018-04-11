@@ -108,6 +108,9 @@ img {
     &:hover {
       background: lighten($beige, 5);
     }
+    &:active {
+      background: darken($beige, 25);
+    }
   }
 }
 
@@ -279,11 +282,14 @@ footer {
 }
 
 footer .wrapper {
+  flex-direction: row;
   flex-wrap:wrap;
 }
 
-.connect {
-  margin-left:25%;
+.social {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .social a {
@@ -297,7 +303,7 @@ footer .wrapper {
 
 .connect {
   form {
-    width:326px;
+    width:100%;
   }
   #email {
     background:$red;

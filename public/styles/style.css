@@ -595,7 +595,12 @@ h2, h3 {
             flex-direction: column;
     width: 100%; }
     #about .wrapper .coven-container p {
-      width: 100%; } }
+      width: 100%; }
+  .connect {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: center; } }
 
 body {
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
@@ -710,6 +715,8 @@ img {
     transition: all 0.3s ease; }
     .prod-description .add-to-cart:hover {
       background: #cdc6b9; }
+    .prod-description .add-to-cart:active {
+      background: #8a7d63; }
 
 .coven-container {
   display: -webkit-box;
@@ -864,11 +871,24 @@ footer {
         color: #c2baaa; }
 
 footer .wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.connect {
-  margin-left: 25%; }
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .social a {
   text-decoration: none;
@@ -879,7 +899,7 @@ footer .wrapper {
     color: #c2baaa; }
 
 .connect form {
-  width: 326px; }
+  width: 100%; }
 
 .connect #email {
   background: #d24937;
