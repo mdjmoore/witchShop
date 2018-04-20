@@ -67,11 +67,6 @@ var addedItem = document.getElementsByName("add");
 var itemID = void 0;
 var itemPrice = void 0;
 
-// function totalCost() {
-//     console.log(itemPrice);
-// }
-
-
 witchShop.events = function () {
     cartTag.onclick = function () {
         showCart();
@@ -103,7 +98,6 @@ witchShop.events = function () {
         var listPriceText = document.createTextNode(itemPrice);
         listItemPrice.appendChild(listPriceText);
         costList.appendChild(listItemPrice);
-        totalCost(itemPrice);
     };
 };
 

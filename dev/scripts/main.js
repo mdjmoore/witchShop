@@ -65,13 +65,6 @@ const addedItem = document.getElementsByName("add");
 let itemID;
 let itemPrice;
 
-
-// function totalCost() {
-//     console.log(itemPrice);
-// }
-
-
-
 witchShop.events = function () {
     cartTag.onclick = function () { showCart() };
     close.onclick = function () { closeModal() };
@@ -97,7 +90,6 @@ witchShop.events = function () {
         const listPriceText = document.createTextNode(itemPrice);
         listItemPrice.appendChild(listPriceText);
         costList.appendChild(listItemPrice);
-        totalCost(itemPrice);
     };
 };
 
